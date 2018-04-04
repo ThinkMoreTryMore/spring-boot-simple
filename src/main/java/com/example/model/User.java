@@ -5,6 +5,5 @@ import javax.persistence.Table;
 public class User {
     private Integer uId;
     private String uName;
-    private String uname;
 
 }

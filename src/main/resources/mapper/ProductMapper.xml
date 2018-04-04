@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.example.dao.ProductMapper">
+
+    <update id="updative" parameterType="com.example.model.Product">
+       UPDATE product_ SET `NAME`=#{name},price=#{price} WHERE id=#{id}
+    </update>
+
+    <delete id="deletive" parameterType="int">
+        delete from product_ where id=#{id}
+    </delete>
 </mapper>
