@@ -4,8 +4,14 @@ import com.example.model.Product;
 import com.example.service.ProductService;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,8 +20,9 @@ public class IndexController {
     @Autowired
     ProductService service;
 
-    @RequestMapping("/hello")
-    public String index() {
+    @RequestMapping("/show1")
+    public String index(Model model) {
+        model.addAttribute("now", DateFormat.getDateTimeInstance().format(new Date()));
         return "hello";
     }
 

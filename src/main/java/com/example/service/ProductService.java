@@ -6,6 +6,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 import tk.mybatis.mapper.entity.Example.Criteria;
 
@@ -24,17 +25,6 @@ public class ProductService {
         PageInfo<Product> pageInfo = new PageInfo<Product>(recordList);
         return pageInfo;
     }
-
-    public int saveProduct(Product product) {
-        int i = 0;
-        if (product.getId() != null) {
-            i = productMapper.updateByPrimaryKey(product);
-        } else {
-            i = productMapper.insert(product);
-        }
-        return i;
-    }
-
 
     @Transactional(rollbackFor = Exception.class)
     public void saveProduct(Product product) {
