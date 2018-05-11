@@ -9,4 +9,8 @@
 # 处理数据的操作请放在service层
 # spring mvc的入口放在controller层
 # util包中的是 mybatis需要使用的MyMapper,读取spring的PropertiesUtils
-# 此test可以进行单元测试 
+# 此test可以进行单元测试
+
+
+#此项目整合的是一个音乐网站项目
+#由于Jsp格式难以配置，所以此项目配置的是一个ftl格式的页面
