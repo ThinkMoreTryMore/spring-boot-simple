@@ -1,0 +1,106 @@
+.main a:hover{
+	color: #31c27c;
+}
+.mod_singer_tag{
+	background: #fbfbfb;
+	padding: 34px 0 17px 40px;
+	margin: 30px 0 20px;
+}
+.singer_tag_list{
+	padding-bottom: 3px;
+	height: auto;
+	overflow: hidden;
+}
+.mod_singer_tag .singer_tag_item_select,
+.mod_singer_tag .singer_tag_item_select:hover{
+	background-color: #31c27c;
+	color: #fff;
+}
+.singer_tag_item{
+	/*float: left;*/
+	line-height: 26px;
+	padding: 0 8px;
+	margin: 0 12px 14px 0;
+}
+.singer_tag_item_all{
+	margin-right: 28px;
+}
+.mod_singer_list{
+	overflow: hidden;
+	text-align: center;
+}
+.singer_list_list{
+	margin-right: -20px;
+	overflow: hidden;
+
+}
+.singer_list_item{
+	float: left;
+	width: 20%;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.singer_list_item_box{
+	position: relative;
+	margin-right: 20px;
+	background-color: #fbfbfb;
+	padding: 25px 0;
+	overflow: hidden;
+}
+.singer_list_cover{
+	margin-left: auto;
+	margin-right: auto;
+}
+.singer_list_cover .singer_list_pic{
+	display: block;
+	width: 140px;
+	height: 140px;
+	border-radius: 126px;
+}
+.singer_list_title{
+	font-size: 15px;
+	font-weight: 400;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 20px auto 4px;
+}
+.singer_list_txt{
+	margin-right: -20px;
+	overflow: hidden;
+	margin-bottom: 60px;
+}
+.singer_list_txt_item{
+	float: left;
+	width: 20%;
+}
+.singer_list_txt_link{
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 18px;
+	line-height: 36px;
+}
+.mod_page_nav{
+	text-align: center;
+	margin-bottom: 60px;
+	font-size: 0px;
+}
+.mod_page_nav a,
+.mod_page_nav strong{
+	font-size: 16px;
+	font-weight: 400;
+	display: inline-block;
+	line-height: 50px;
+	margin: 0 5px;
+	padding: 0 21px;
+}
+.mod_page_nav .current,
+.mod_page_nav a:hover{
+	color: #fff;
+	background: #31c27c;
+}
+.mod_page_nav a{
+	color: #a2a2a2;
+}

@@ -1,0 +1,336 @@
+@charset "utf-8";
+body, button, input, select, textarea, th,i{
+	font-family: poppin, Tahoma, Arial;
+	font-style: normal;
+	font-size: 14px;
+	background-color: #fff;
+	color: #333;
+}
+a:hover{
+	color: #31c27c;
+	text-decoration: none;
+}
+/*头部*/
+.mode_header{
+	background-color: #fff;
+	position: relative;
+	z-index: 4;
+}
+.mod_header .section_inner{
+	padding-top: 90px;
+	/*height: 30px;*/
+}
+.main,.section_inner{
+	/*padding-top: 90px;*/
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.qqmusic_title{
+	position: absolute;
+	left: 0px;
+	top: 19px;
+}
+.mod_top_nav{
+	position: absolute;
+	left: 225px;
+	top: 0px;
+}
+.mod_top_subnav{
+	/*position: absolute;*/
+	display: block;
+	top: 90px;
+	height: 51px;
+	line-height: 51px;
+	border-top: 1px solid #f2f2f2;
+	padding-left: 256px;
+	width: 79%;
+}
+.mod_top_subnav .top_subnav_item .top_subnav_link:hover{
+	color: #31c27c;
+}
+.mod_top_search{
+	position: absolute;
+	top:0px;
+	right: 294px;
+}
+.header_opt{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 90px;
+	/*line-height: 90px;*/
+}
+.qqmusic_logo{
+	width: 190px;
+	height: 52px;
+}
+.top_nav_item{
+	float: left;
+}
+.top_nav_link{
+	display:  block;
+	padding: 0 20px;
+	line-height: 90px;
+	height: 90px;
+	text-align: center;
+	font-size: 18px;
+}
+.top_nav_link_current{
+	color: #fff;
+	background-color: #31c27c;
+}
+.top_subnav_link_current{
+	color: #31c27c;
+}
+.top_subnav_item{
+	float: left;
+	font-size: 15px;
+	color: #c1c1c1;
+	margin-right: 56px;
+}
+
+.mod_search_input{
+	border: 1px solid #c9c9c9;
+	padding: 0 7px 0 9px;
+	line-height: 36px;
+	height: 36px;
+	margin-top: 26px;
+	border-radius: 3px;
+	background-color: #fff;
+	position: relative;
+}
+.search_input_input{
+	width: 200px;
+	height: 36px;
+	border:0 none;
+	font-size: 14px;
+	background: none;
+	outline: none;
+}
+.search_input_btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0 none;
+	width: 38px;
+	height: 35px;
+	overflow: visible;
+	background: 0 0;
+}
+.search_input_btn:hover .icon_search{
+	background-position: 0 -60px;
+}
+
+.icon_search{
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -8px;
+	width: 16px;
+	height: 16px;
+	background-image: url(../images/icon_sprite.png);
+	background-position: 0 -40px;
+}
+.icon_txt{
+	font: 0/0 a;
+}
+.header_opt .mod_top_login{
+	position: relative;
+	top: 25px;
+	left: 22px;
+}
+.mod_btn_green,
+.mod_btn{
+	font-style: normal;
+	border-radius: 2px;
+	font-size: 14px;
+	margin-right: 6px;
+	padding: 0 13px;
+	height: 38px;
+	line-height: 38px;
+	display: inline-block;
+	white-space: nowrap;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.mod_btn{
+	border: 1px solid #c9c9c9;
+	color: #333;
+}
+.mod_btn_green{
+	border: 1px solid #31c27c;
+	background-color: #31c27c;
+	/*padding: 7px;
+	border-radius: 3px;*/
+	color: #fff;
+	/*margin-left: 4px;*/
+}
+.mod_btn_green:hover{
+	color: #fff;
+}
+.mod_slide_action{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+/*关于头部的设置*/
+.mod_top_nav .top_nav_item .top_nav_link:hover{
+	background: #31c27c;
+	color: #fff;
+}
+.mod_top_nav .top_nav_item .top_nav_link_current:hover{
+	color: #fff;
+}
+.mod_header{
+	background-color: #fff;
+	position: relative;
+	z-index: 10;
+}
+
+
+/*尾部*/
+.footer{
+	color: #999;
+	background-color: #333;
+}
+.footer a:hover{
+	color: #31c27c;
+}
+.footer_info{
+	overflow: hidden;
+	border-bottom: 1px solid #353535;
+	position: relative;
+}
+/* 下载*/
+.footer_download{
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+.footer_tit{
+	font-size: 15px;
+	font-weight: 400;
+	padding: 0px 0 6px;
+}
+.footer_download_list{
+	margin-left: -29px;
+}
+.footer_download_list_item{
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.icon_qm_android, .icon_qm_iphone, .icon_qm_kg, .icon_qm_mac, .icon_qm_pc, .icon_qm_qp, .icon_qm_ss{
+	display: block;
+	margin: 0 29px 12px;
+	height: 48px;
+	background-image: url(../images/footer.png);
+}
+.footer a{
+	color: #999;
+}
+.icon_qm_pc{
+	width: 37px;
+	background-position: -2px 0;
+}
+.icon_txt{
+	font: 0/0 a;
+}
+.icon_qm_mac{
+	width: 46px;
+	background-position: -92px 0;
+}
+.icon_qm_android{
+	width: 37px;
+	background-position: -190px 0px;
+}
+.icon_qm_iphone{
+	width: 34px;
+	background-position: -279px 0;
+}
+
+/*特色产品*/
+.footer_product{
+	position: absolute;
+	top: 0;
+	left: 476px;
+	width: 304px;
+}
+.footer_tit{
+	font-size: 15px;
+	font-weight: 400;
+	padding: 80px 0 46px;
+}
+.footer_product_list{
+	margin-left: -25px;
+}
+.footer_product_list_item{
+	float: left;
+	margin-bottom: 18px;
+	text-indent: 10px;
+	margin-right: 5px;
+}
+.footer_product_list_item_pic{
+	text-align: center;
+	position: relative;
+	margin-right: 0;
+	text-indent: 0;
+}
+.icon_qm_kg{
+	width: 41px;
+	background-position: -370px 0;
+}
+.icon_qm_ss{
+	width: 37px;
+	background-position: -463px 0;
+}
+.icon_qm_qp{
+	margin-right: 23px;
+	width: 40px;
+	background-position: -563px 0;
+}
+
+/*合作链接*/
+.footer_link{
+	float: right;
+	padding-bottom: 57px;
+	width: 300px;
+}
+.footer_link_list_item{
+	float: left;
+	min-width: 100px;
+	margin-bottom: 12px;
+}
+
+/*所有权声明*/
+.footer_copyright{
+	text-align: center;
+	line-height: 28px;
+	padding: 24px 0;
+	
+}
+button{
+	cursor: pointer;
+}
+
+.mod_popup_mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.2);
+	z-index: 999;
+	
+}
+
+audio{
+	margin: 10px 0 0 0;
+	border: 1px solid rebeccapurple;
+	padding: 2px;
+	border-radius: 9px;
+}
